@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8  
+  context-path: /test
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@172.30.3.102:1521:orcl
+    username: wssb_rspt_base
+    password: wssb_rspt_base
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    database: ORACLE
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
